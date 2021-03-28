@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/logobrain" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp"
+                android:text="What do you want to remember to do?"
+                android:layout_marginTop="20dp"/>
+
+
+            <EditText
+                android:id="@+id/whatToDo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex. Take my pill"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:text="When do you want to do it?"
+                android:layout_marginTop="20dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:text="@string/lunes"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/lunesCheck"
+                        android:layout_marginLeft="70dp"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="@string/martes"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/martesCheck"
+                        android:layout_marginLeft="70dp"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="@string/miercoles"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/miercolesCheck"
+                        android:layout_marginLeft="70dp"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="@string/jueves"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/juevesCheck"
+                        android:layout_marginLeft="70dp"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="@string/viernes"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/viernesCheck"
+                        android:layout_marginLeft="70dp"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="@string/sabado"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/sabadoCheck"
+                        android:layout_marginLeft="70dp"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="@string/domingo"
+                        android:textSize="16sp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/domingoCheck"
+                        android:layout_marginLeft="70dp"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:text="At what time?"
+                android:layout_marginTop="30dp"/>
+
+            <Button
+                android:id="@+id/btn_tiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Set time"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:textAllCaps="false"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingHorizontal="50dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Done" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
